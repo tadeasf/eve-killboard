@@ -1,9 +1,13 @@
-import React from 'react';
-import Killboard from './components/Killboard';
+import React from "react";
+import Killboard from "./components/Killboard";
+import LastWeekKills from "./components/LastWeekKills";
 
 function App() {
   return (
-        <Killboard />
+    <div className="App">
+      <Killboard />
+      <LastWeekKills />
+    </div>
   );
 }
 
