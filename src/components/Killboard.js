@@ -195,9 +195,6 @@ const Killboard = () => {
 
   return (
     <Box width="80%" margin="auto" mt="5">
-      <Heading as="h2" size="xl" textAlign="center" mb="5">
-        Rán Squad - Killboard
-      </Heading>
       <Flex justifyContent="space-between" mb="4">
         <Heading as="h3" size="md">
           Character
