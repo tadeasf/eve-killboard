@@ -11,7 +11,7 @@ function App() {
       </Heading>
       <Killboard />
       <Heading as="h2" size="l" textAlign="center" mb="5" mt="5">
-        Kills over last 7 days
+        Kills in current week (starts Monday)
       </Heading>
       <LastWeekKills />
     </div>
