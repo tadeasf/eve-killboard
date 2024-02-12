@@ -28,6 +28,7 @@ const Killboard = () => {
     { id: "1772807647", name: "Tadeas CZ" },
     { id: "2114774296", name: "Cengar Creire-Geng" },
     { id: "2116810440", name: "Deathly Hallows2" },
+    { id: "1772807647", name: "Tadeas CZ" },
     { id: "2119522407", name: "7oXx" },
     { id: "1296770674", name: "Emnar Thidius" },
     { id: "94370897", name: "Richard Valdyr" },
@@ -52,6 +53,20 @@ const Killboard = () => {
     { id: "2117414873", name: "Tec8n0" },
     { id: "2120058366", name: "TheRealFatback" },
     { id: "2114249907", name: "Tion Galler" },
+    { id: "92663124", name: "Sville Sveltos" },
+    { id: "2115781306", name: "Aretha LouiseFrank" },
+    { id: "2113791254", name: "Cleanthes" },
+    { id: "2112599464", name: "Mad Dawg Yaken" },
+    { id: "1451471232", name: "mr bowjangles" },
+    { id: "2116105023", name: "Drithi Moonshae" },
+    { id: "2120186660", name: "ozzy993" },
+    { id: "134063007", name: "Yamcha7" },
+    { id: "93426904", name: "John Cravius" },
+    { id: "91613448", name: "Private Panacan" },
+    { id: "1135028350", name: "Arkady Drayson" },
+    { id: "93466458", name: "Malcolm Bobodiablo" },
+    { id: "91290222", name: "tainted demon" },
+    { id: "345875676", name: "Caleb Drakka" },
   ];
 
   // Color functions
@@ -212,12 +227,16 @@ const Killboard = () => {
           defaultValue={selectedCharacterId}
           title="Character"
         >
-          {characters.map((character) => (
-            <option key={character.id} value={character.id}>
-              {character.name}
-            </option>
-          ))}
+          {characters
+            .slice()
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((character) => (
+              <option key={character.id} value={character.id}>
+                {character.name}
+              </option>
+            ))}
         </Select>
+
         <Select
           onChange={(e) => setDisplayCount(parseInt(e.target.value, 10))}
           defaultValue={displayCount}
