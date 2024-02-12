@@ -28,7 +28,6 @@ const Killboard = () => {
     { id: "1772807647", name: "Tadeas CZ" },
     { id: "2114774296", name: "Cengar Creire-Geng" },
     { id: "2116810440", name: "Deathly Hallows2" },
-    { id: "1772807647", name: "Tadeas CZ" },
     { id: "2119522407", name: "7oXx" },
     { id: "1296770674", name: "Emnar Thidius" },
     { id: "94370897", name: "Richard Valdyr" },
